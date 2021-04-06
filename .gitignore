@@ -8,6 +8,5 @@ tmp/
 build
 htmlcov
 
-,gitignore
 
 *.lock

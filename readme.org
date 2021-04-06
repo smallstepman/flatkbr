@@ -1,8 +1,8 @@
 #+TITLE: Flat keyboard
 
-[[file:./photos/IMG_20210406_202656.jpg]]
-[[file:./photos/IMG_20210406_202805.jpg]]
-[[file:./photos/IMG_20210406_202937.jpg]]
+[[file:photos/IMG_20210406_202656.jpg][nil]]
+[[file:photos/IMG_20210406_202805.jpg][nil]]
+[[file:photos/IMG_20210406_202937.jpg][nil]]
 
 I want the flattest possible keyboard with mechanical switches. At the moment I'm trying to build it with Kailh Choc V1, however I'm also considering Kailh X in the future.
 
@@ -17,12 +17,13 @@ My firmware of choice is ZMK.
 *** Install
 #+begin_src shell
 sudo pacman -S cura openscad
-pip install solid
+pip install pipenv
+pipenv install solidpython
 #+end_src
 
 *** Build
 #+begin_src shell
-python main.py
+pipenv run python main.py
 #+end_src
   
 *** Convert to STL
