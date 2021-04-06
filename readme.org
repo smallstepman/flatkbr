@@ -1,9 +1,4 @@
 #+TITLE: Flat keyboard
-
-[[file:photos/IMG_20210406_202656.jpg]]
-[[file:photos/IMG_20210406_202805.jpg]]
-[[file:photos/IMG_20210406_202937.jpg]]
-
 I want the flattest possible keyboard with mechanical switches. At the moment I'm trying to build it with Kailh Choc V1, however I'm also considering Kailh X in the future.
 
 Because flatness is my #1 goal, I can't use PCB for this design, since it adds few milimeters of height (PCB itself is ~1mm, but also the keycap sits on top of it, instead of inside it, and that wastes around 3-4mm).
@@ -14,6 +9,15 @@ My microcontoller of choice is nrfMicro by joric.
 
 My firmware of choice is ZMK.
 
+
+*** Version (keyswitch housing V2) notes:
+[[file:./photos/IMG_20210406_225543_V2.jpg]]
+[[file:./photos/IMG_20210406_225817_V2.jpg]]
+[[file:./photos/IMG_20210406_230319_V2.jpg]]
+- test = 6 would be fun, but, there is no way to plug the swithc all the way down AND put a keycap on it so it doesn't wobble (aka goes all the way down into keyswitch). One more idea to test, is to actually make also a hole for keycap, will test in V3
+- test = 3 stops 0.1 before hitting the plate. Because it doesn't bottom out, the sound is a little bit different than the rest (higher pitch)
+- bottom-out sound on test 6,5,4 is thicker, lower pitch, kinda like typing on typing machine. It has it's appeal 
+---
 *** Install
 #+begin_src shell
 sudo pacman -S cura openscad
