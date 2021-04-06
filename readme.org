@@ -1,0 +1,36 @@
+#+TITLE: Flat keyboard
+
+[[file:./photos/IMG_20210406_202656.jpg]]
+[[file:./photos/IMG_20210406_202805.jpg]]
+[[file:./photos/IMG_20210406_202937.jpg]]
+
+I want the flattest possible keyboard with mechanical switches. At the moment I'm trying to build it with Kailh Choc V1, however I'm also considering Kailh X in the future.
+
+Because flatness is my #1 goal, I can't use PCB for this design, since it adds few milimeters of height (PCB itself is ~1mm, but also the keycap sits on top of it, instead of inside it, and that wastes around 3-4mm).
+
+Because there is no PCB, the keyboard will have to be handwired.
+
+My microcontoller of choice is nrfMicro by joric.
+
+My firmware of choice is ZMK.
+
+*** Install
+#+begin_src shell
+sudo pacman -S cura openscad
+pip install solid
+#+end_src
+
+*** Build
+#+begin_src shell
+python main.py
+#+end_src
+  
+*** Convert to STL
+#+begin_src shell
+openscad model.scad -o model.stl
+#+end_src
+
+*** Convert to gcode
+#+begin_src shell
+cura model.stl
+#+end_src
