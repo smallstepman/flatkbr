@@ -10,13 +10,13 @@ My microcontoller of choice is nrfMicro by joric.
 My firmware of choice is ZMK.
 
 
-*** Version (keyswitch housing V2) notes:
-[[file:./photos/IMG_20210406_225543_V2.jpg]]
-[[file:./photos/IMG_20210406_225817_V2.jpg]]
-[[file:./photos/IMG_20210406_230319_V2.jpg]]
-- test = 6 would be fun, but, there is no way to plug the swithc all the way down AND put a keycap on it so it doesn't wobble (aka goes all the way down into keyswitch). One more idea to test, is to actually make also a hole for keycap, will test in V3
-- test = 3 stops 0.1 before hitting the plate. Because it doesn't bottom out, the sound is a little bit different than the rest (higher pitch)
-- bottom-out sound on test 6,5,4 is thicker, lower pitch, kinda like typing on typing machine. It has it's appeal 
+*** Version (keyswitch housing V3) notes:
+[[file:./photos/screenshot-2021-04-07_01:09:41_V3.png]]
+[[file:./photos/IMG_20210407_012550_V3.jpg]]
+11mm measuring from the top of the keycap to the bottom of the base. Maaaybe I can go 10.5, but I'm not really sure if I'd be able to actually run the wires and solder it to sit flat.
+For the moment I'm happy.
+
+Now I need to work on placement
 ---
 *** Install
 #+begin_src shell
